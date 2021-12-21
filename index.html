@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="shortcut icon" href="img/portfolio/logo_size-removebg-preview.png" type="image/x-icon">
+  <!--Boxicons-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body> 
+
+<!--Inicio del Header-->
+<header class="header">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="logo">
+          <a href="index.html">N</a>
+      </div>
+      <div class="hamburger-btn outer-shadow hover-in-shadow">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!--Fin del Header-->
+
+<!-- Inicio del menu de navegacion -->
+<nav class="nav-menu">
+  <div class="close-nav-menu outer-shadow hover-in-shadow">
+    &times;
+  </div>
+  <div class="nav-menu-inner">
+    <ul>
+      <li><a href="#" class="inner-shadow active"></a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Inicio</a></li>
+      <li><a href="#sobre_mi" class="outer-shadow hover-in-shadow">Sobre Mi</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Experiencia</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Portafolio</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Contactame</a></li>
+    </ul>
+  </div>
+
+  <!-- Propietario -->
+  <p class="copyright-text">&copy;
+    Nicolas Marquez
+  </p>
+</nav>
+<!-- Fin del menu de navegacion -->
+
+<!-- Seccion de inicio -->
+<section class="home-section section">
+
+  <!--Inicio de efecto warp-->
+  <div class="effect-wrap">
+    <div class="effect effect-1"></div>
+    <div class="effect effect-2">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>    
+    </div>
+    <div class="effect effect-3"></div>
+    <div class="effect effect-4"></div>
+    <div class="effect effect-5">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+  <div class="effect effect-6"></div>
+  <!--Fin de efecto warp-->
+  <div class="container">
+    <div class="row full-screen aling-items-center">
+      <div class="home-text">
+        <p>¡Hola!</p>
+        <h2>Soy Nicolas Marquez</h2>
+        <h1>Diseñador UX/IU</h1>
+        <a href="#sobre_mi" class="btn-1 outer-shadow hover-in-shadow">Mas Sobre Mi</a>
+      </div>
+      <div class="home-img">
+        <div class="img-box inner-shadow">
+          <img src="img/portfolio/perfil.jpg" alt="profile-pic" class="outer-shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin de Seccion de inicio -->
+
+<!--Inicio de Seccion Sobre_Mi-->
+<section class="about-section section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="Informacion principal" id="sobre_mi">Sobre Mi</h2>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="about-img">
+        <div class="img-box inner-shadow">
+          <img src="img/portfolio/perfil.jpg" class="outer-shadow" alt="profile-pic">
+        </div>
+        <!--Mis Redes Sociales-inicio-->
+        <div class="social-links">
+          <a href="https://www.facebook.com/Nicolas.Marq" class="outer-shadow hover-in-shadow"><i class='bx bxl-facebook-square bx-tada' ></i></a>
+          <a href="https://www.instagram.com/nico_2014/?hl=es-la" class="outer-shadow hover-in-shadow"><i class='bx bxl-instagram-alt bx-tada bx-flip-horizontal' ></i></a>
+          <a href="https://www.linkedin.com/in/nicolas-marquez-86464a218/" class="outer-shadow hover-in-shadow"><i class='bx bxl-linkedin-square bx-tada' ></i></a>
+        </div>
+        <!--Mis Redes Sociales-fin-->
+      </div>
+      <div class="about-info">
+        <p><span>¡Hola!, me llamo Nicolas. Soy diseñador UX/IU.</span> Soy motivado, siempre buscando 
+          aprender nuevas habilidades, 
+          asumir responsabilidades 
+          adicionales y crecer 
+          profesionalmente. Con firme 
+          compromiso de conseguir un 
+          alto nivel de calidad en cada 
+          proyecto. Con especial atención 
+          a los detalles y compromiso con 
+          el crecimiento de la empresa.</p>
+        <a href="CV--1.pdf"class="btn-1 outer-shadow hover-in-shadow">Descarga Mi CV</a>
+        <a href="#"class="btn-1 outer-shadow hover-in-shadow">Contactame</a>
+      </div>
+    </div>
+    <!--Tabla de Pestañas Inicio-->
+    <div class="row">
+      <div class="about-tabs">
+        <a href="#skills"><span class="tab-items outer-shadow active" data-target=".habilidades" >Habilidades</span></a>
+        <a href="#experiencia"><span class="tab-items outer-shadow active" data-target=".experiencia" >Experiencia</span></a>
+        <a href="#educacion"><span class="tab-items outer-shadow active" data-target=".educacion" >Educacion</span></a>
+      </div>
+    </div>
+    <!--Tabla de Pestañas Final inicio-->
+    <!--Habilidades inicio-->
+    <div class="row">
+      <div class="skills tab-content active" id="skills">
+        <div class="row">
+          <!--Porcentaje de conocimiento-->
+          <div class="skill-item">
+            <p>HTML</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(70% - 14px);">
+              <span>70%</span>
+            </div>
+            </div>
+          </div>
+          <!--Porcentaje de conocimiento fin-->
+          <!--Porcentaje de conocimiento-->
+          <div class="skill-item">
+            <p>Javascript</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(60% - 14px);">
+              <span>60%</span>
+            </div>
+            </div>
+          </div>
+          <!--Porcentaje de conocimiento fin-->
+          <!--Porcentaje de conocimiento-->
+          <div class="skill-item">
+            <p>CSS</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(70% - 14px);">
+              <span>70%</span>
+            </div>
+            </div>
+          </div>
+          <!--Porcentaje de conocimiento fin-->
+           <!--Porcentaje de conocimiento-->
+           <div class="skill-item">
+            <p>Diseño UX/IU</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(80% - 14px);">
+              <span>80%</span>
+            </div>
+            </div>
+          </div>
+          <!--Porcentaje de conocimiento fin-->
+        </div>
+      </div>
+    </div>
+    <!--Habilidades Final-->
+
+    <!--Seccion de Experiencia Inicio-->
+    <div class="row">
+      <div class="experience tab-content" id="experiencia">
+        <div class="row">
+          <div class="timeline">
+            <div class="row">
+              <!--Timeline Items Inicio-->
+              <div class="timeline-item">
+                <div class="timeline-item-inner outer-shadow">
+                  <i class='bx bxs-briefcase bx-tada' ></i>
+                  <span>Mar 2021 – Jun 2021</span>
+                  <h3>INGENIERO DE SISTEMAS</h3>
+                  <h4>INVERSIONES TRANSPORTES GONZALEZ S.C.A.</h4>
+                  <p>Ingeniero Auxiliar en el área de sistemas, realizando 
+                    actividades tales como actualización de plataformas 
+                    digitales empresariales, 
+                    creación y cargue de información empresarial, entre 
+                    otros. <br><br>
+                    • Cumplimiento de mis objetivos a corto y 
+                    largo plazo consistentemente. <br><br>
+                    • Gestión empática y serena de las quejas de 
+                    los usuarios. <br><br>
+                    • Participación proactiva en reuniones 
+                    destinadas a crear nuevas prácticas.
+                    </p>
+                </div>
+              </div>
+              <!--Timeline Items Final-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Seccion de Experiencia final-->
+
+
+    <!--Seccion de Estudios Inicio-->
+    <div class="row">
+      <div class="education tab-content" id="educacion">
+        <div class="row">
+          <div class="timeline">
+            <div class="row">
+              <!--Timeline Items Inicio-->
+              <div class="timeline-item">
+                <div class="timeline-item-inner outer-shadow">
+                  <i class='bx bxs-graduation bx-tada' ></i>
+                  <span>Feb 2017- Dic 2019</span>
+                  <h3>TECNÓLOGO EN SISTEMAS DE INFORMACIÓN 
+                    Y SOFTWARE</h3>
+                  <h4>Corporación Universitaria Rafael Núñez ---
+                    Cartagena</h4>
+                </div>
+              </div>
+              <!--Timeline Items Final-->
+              <!--Timeline Items Inicio-->
+              <div class="timeline-item">
+                <div class="timeline-item-inner outer-shadow">
+                  <i class='bx bxs-graduation bx-tada' ></i>
+                  <span>Feb 2020- Actualmente</span>
+                  <h3>INGENIERIA DE SISTEMAS</h3>
+                  <h4>Corporación Universitaria Rafael Núñez ---
+                    Cartagena</h4>
+                </div>
+              </div>
+              <!--Timeline Items Final-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Seccion de Estudios Final-->    
+  </div>
+</section>
+<!--Final de Seccion Sobre_Mi-->
+<!-- main js -->
+<script src="js/main.js"></script>
+<!-- style switcher js -->
+<script src="js/style-switcher.js"></script>
+<!--Iconos-->
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+
+</body>
+</html>
+
