@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/skins/color-1.css">
+  <!--responsive-->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="shortcut icon" href="img/portfolio/logo_size-removebg-preview.png" type="image/x-icon">
   <!--Boxicons-->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body> 
+
+  <!--Animacion de carga inicio-->+
+  <div class="preloader">
+    <div class="box">
+      <div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+  <!--Animacion de carga final-->
 
 <!--Inicio del Header-->
 <header class="header">
@@ -36,12 +45,11 @@
   </div>
   <div class="nav-menu-inner">
     <ul>
-      <li><a href="#" class="inner-shadow active"></a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">Inicio</a></li>
-      <li><a href="#sobre_mi" class="outer-shadow hover-in-shadow">Sobre Mi</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">Experiencia</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">Portafolio</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">Contactame</a></li>
+      <!-- <li>< href="#" class="link-item inner-shadow active"></></li> -->
+      <li><a href="#home" class="link-item outer-shadow hover-in-shadow">Inicio</a></li>
+      <li><a href="#about" class="link-item outer-shadow hover-in-shadow">Sobre Mi</a></li>
+      <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portafolio</a></li>
+      <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contactame</a></li>
     </ul>
   </div>
 
@@ -50,10 +58,14 @@
     Nicolas Marquez
   </p>
 </nav>
+
+<div class="fade-out-effect">
+      
+</div>
 <!-- Fin del menu de navegacion -->
 
 <!-- Seccion de inicio -->
-<section class="home-section section">
+<section class="home-section section active" id="home">
 
   <!--Inicio de efecto warp-->
   <div class="effect-wrap">
@@ -75,7 +87,7 @@
         <p>¡Hola!</p>
         <h2>Soy Nicolas Marquez</h2>
         <h1>Diseñador UX/IU</h1>
-        <a href="#sobre_mi" class="btn-1 outer-shadow hover-in-shadow">Mas Sobre Mi</a>
+        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">Mas Sobre Mi</a>
       </div>
       <div class="home-img">
         <div class="img-box inner-shadow">
@@ -88,17 +100,17 @@
 <!-- Fin de Seccion de inicio -->
 
 <!--Inicio de Seccion Sobre_Mi-->
-<section class="about-section section">
+<section class="about-section section" id="about">
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2 data-heading="Informacion principal" id="sobre_mi">Sobre Mi</h2>
+        <h2 data-heading="Informacion principal" id="about">Sobre Mi</h2>
       </div>      
     </div>
     <div class="row">
       <div class="about-img">
         <div class="img-box inner-shadow">
-          <img src="img/portfolio/perfil.jpg" class="outer-shadow" alt="profile-pic">
+          <img src="img/portfolio/perfil-2.jpeg" class="outer-shadow" alt="profile-pic">
         </div>
         <!--Mis Redes Sociales-inicio-->
         <div class="social-links">
@@ -112,22 +124,23 @@
         <p><span>¡Hola!, me llamo Nicolas. Soy diseñador UX/IU.</span> Soy motivado, siempre buscando 
           aprender nuevas habilidades, 
           asumir responsabilidades 
-          adicionales y crecer 
+          adicionales y crecer personal y 
           profesionalmente. Con firme 
-          compromiso de conseguir un 
+          compromiso en conseguir un 
           alto nivel de calidad en cada 
           proyecto. Con especial atención 
           a los detalles y compromiso con 
           el crecimiento de la empresa.</p>
         <a href="CV--1.pdf"class="btn-1 outer-shadow hover-in-shadow">Descarga Mi CV</a>
-        <a href="#"class="btn-1 outer-shadow hover-in-shadow">Contactame</a>
+        <a href="#contact"class="link-item btn-1 outer-shadow hover-in-shadow">Contactame</a>
       </div>
+
     </div>
     <!--Tabla de Pestañas Inicio-->
     <div class="row">
-      <div class="about-tabs">
+      <div class="about-tabs" id="skills">
         <a href="#skills"><span class="tab-items outer-shadow active" data-target=".habilidades" >Habilidades</span></a>
-        <a href="#experiencia"><span class="tab-items outer-shadow active" data-target=".experiencia" >Experiencia</span></a>
+        <a href="#experience"><span class="tab-items outer-shadow active" data-target=".experience" >Experiencia</span></a>
         <a href="#educacion"><span class="tab-items outer-shadow active" data-target=".educacion" >Educacion</span></a>
       </div>
     </div>
@@ -183,7 +196,7 @@
 
     <!--Seccion de Experiencia Inicio-->
     <div class="row">
-      <div class="experience tab-content" id="experiencia">
+      <div class="experience tab-content" id="experience">
         <div class="row">
           <div class="timeline">
             <div class="row">
@@ -255,10 +268,201 @@
   </div>
 </section>
 <!--Final de Seccion Sobre_Mi-->
+
+<!--Seccion de portafolio inicio-->
+<section class="portfolio-section section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="portafolio" >Mis Proyectos</h2>
+      </div>
+    </div>
+    <!--proyectos menu inicio-->
+    <div class="row">
+      <div class="portfolio-filter">
+        <span class="filter-item" data-target="todos">Todos</span>
+      </div>
+    </div>
+    <!--proyectos menu final-->
+
+    <!--items de portafolio inicio-->
+    <div class="row portfolio-items">
+      <div class="portfolio-item" data-category="app-burger">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <a href="https://www.figma.com/proto/XSodWQ4eN5Z8fsIAqkWtlA/App-burger?node-id=4%3A4&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=4%3A4&show-proto-sidebar=1" target="_blank">
+              <img src="img/portfolio/proyecto-1/app-burger-2.png"  alt="app-burger" data-screenshots="img/portfolio/proyecto-1/app-burger-2.png">
+            </a>
+            <!--Boton para ver los proyectos-->
+            <span class="view-project">Ver proyecto</span>
+          </div>
+          <p class="portfolio-item-title">App-burger</p>
+          
+        </div>
+      </div>
+
+      <!--Segundo proyecto-->
+      <div class="portfolio-item" data-category="shoes-page">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <a href="https://www.figma.com/proto/sWKoVQCCxCL06wEZzsFW5H/Shoes-page?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&node-id=1%3A2" target="_blank">
+              <img src="img/portfolio/proyecto-2/shoes-page.png" alt="app-burger" data-screenshots="img/portfolio/proyecto-2/shoes-page-2.png">
+            </a>
+            <!--Boton para ver los proyectos-->
+            <span class="view-project">Ver proyecto</span>
+          </div>
+          <p class="portfolio-item-title">Shoes-page</p>
+        </div>
+      </div>
+
+      <!--Tercer proyecto-->
+      <div class="portfolio-item" data-category="fashion-like">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <a href="https://www.figma.com/proto/RF8uXv9z6KrpTtkvEyE7iJ/Fashion-Like?node-id=2%3A23&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A23" target="_blank">
+              <img src="img/portfolio/proyecto-3/fashion-like-1.png" alt="fashion-like" data-screenshots="img/portfolio/proyecto-3/fashion-like-2">
+            </a>
+            <!--Boton para ver los proyectos-->
+            <span class="view-project">Ver proyecto</span>
+          </div>
+          <p class="portfolio-item-title">Fashion-like</p>
+          
+        </div>
+      </div>
+
+      <!--cuarto proyecto-->
+      <div class="portfolio-item" data-category="transgonzalez">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+           <a href="https://github.com/nicolas747/APP-Transportes" target="_blank">
+              <img src="img/portfolio/Proyecto-4/transgonzalez-1.png" alt="transgonzalez" data-screenshots="img/ portfolio/Proyecto-4/transgonzalez-2">
+           </a>
+            <!--Boton para ver los proyectos-->
+            <span class="view-project">Ver proyecto</span>
+          </div>
+          <p class="portfolio-item-title">Transgonzalez</p>
+        </div>
+      </div>
+
+      <!--quinto proyecto-->
+      <div class="portfolio-item" data-category="e-commerce">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <a href="https://www.figma.com/proto/MF7TGASvxyi7r0umTtnZzD/e-commerce?node-id=6%3A3&scaling=scale-down&page-id=0%3A1" target="_blank">
+              <img src="img/portfolio/proyecto-5/e-commerce-1.png" alt="fashion-like" data-screenshots="img/portfolio/proyecto-5/transgonzalez-2">
+            </a>
+            <!--Boton para ver los proyectos-->
+            <span class="view-project">Ver proyecto</span>
+          </div>
+          <p class="portfolio-item-title">E-commerce</p>
+          
+        </div>
+      </div>
+    </div>
+    <!--items de portafolio inicio-->
+  </div>
+</section>
+<!--Seccion de portafolio final-->
+
+<!-- abrir proyecto inicio-->
+<!-- <div class="pp portfolio-popup">
+  <div class="pp-details">
+    <div class="pp-details-inner">
+      <div class="pp-title">
+        <h2>Diseño De Aplicación De Comida</h2>
+        <p>Categoria - <span class="pp-project-category">Aplicacion Movil</span></p>
+      </div>
+      <div class="pp-project-details">
+        <div class="row">
+          <div class="description">
+            <h3>App-burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fuga ab nesciunt magni accusamus est aspernatur aut, magnam nihil quod, debitis distinctio illo libero esse neque, repellat dolor consectetur ex?</p>
+          </div>
+          <div class="info"><h3>Informacion de proyecto</h3>
+            <ul>
+              <li>Fecha - <span>2021</span></li>
+              <li>Proyecto personal</li>
+              <li>Herramientas - <span>Html, Css y Javascript</span></li>
+              <li>Web - <span><a href="https://www.figma.com/proto/XSodWQ4eN5Z8fsIAqkWtlA/App-burger?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=4%3A4&show-proto-sidebar=1&node-id=4%3A4">Ver Proyecto</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separador"></div>
+
+  <div class="pp-main">
+    <div class="pp-main-inner">
+      <div class="pp-project-details-btn outer-shadow hover-in-shadow">Detalles del proyecto <i class='bx bx-plus bx-flashing' ></i></div>
+      <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+      <img src="img/portfolio/proyecto-1/app-burger-2.png" alt="img" class="pp-img outer-shadow">
+      <div class="pp-content">1 of 3</div>
+    </div>
+    <div class="pp-prev"><i class='bx bxs-left-arrow' ></i></div>  
+    <div class="pp-next"><i class='bx bxs-right-arrow'></i></div>  
+  </div>
+</div> -->
+<!--abrir proyecto final -->
+
+<!--Contactame inicio-->
+<section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="Contactemonos">Envíame un mensaje</h2>
+      </div>
+      <div class="row">
+        <!--Items de Contacto inicio-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class='bx bx-phone-call bx-tada' ></i>
+            <span>Telefono</span>
+            <p>3152966754</p>
+          </div>
+        <!--Items de Contacto final-->
+        </div>
+        <!--Items de Contacto inicio-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class='bx bx-mail-send bx-tada' ></i>
+            <span>Email</span>
+            <p>nmarquez9831@gmail.com</p>
+          </div>
+        <!--Items de Contacto final-->
+        </div>
+        <!--Items de Contacto inicio-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class='bx bx-current-location bx-tada' ></i>
+            <span>Direccion</span>
+            <p>kra 13B #24-40 Las Americas (sincelejo-Sucre)</p>
+          </div>
+        <!--Items de Contacto final-->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact-form">
+        <form class="form">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Mensaje"></textarea>
+          <div class="row">
+            <div class="submit-btn">
+              <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar Mensaje</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contactame final-->
+
 <!-- main js -->
 <script src="js/main.js"></script>
-<!-- style switcher js -->
-<script src="js/style-switcher.js"></script>
 <!--Iconos-->
 <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
