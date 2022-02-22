@@ -1053,6 +1053,7 @@ img{
 .contact-section .contact-form{
     flex: 0 0 100%;
     max-width: 100%;
+    margin-left: 10px;
 }
 
 .contact-section .form{
@@ -1060,6 +1061,13 @@ img{
     flex-direction: column;
     width: 40vw;
     margin-top: 2em;
+}
+
+.contact-section .form-label{
+    padding: auto;
+    margin-bottom: 0;
+    color: var(--text-black-700);
+    font-weight: 700;
 }
 
 .contact-section .form input{
@@ -1102,3 +1110,7 @@ img{
     text-align: center;
     padding: 10px 15px;
 }
+
+/*--------validacion de contacto-------*/
+
+
