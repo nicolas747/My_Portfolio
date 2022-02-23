@@ -91,7 +91,7 @@ function bodyScrollingToggle(){
 
 document.getElementById('form')
   .addEventListener('submit', function(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     btn.value = 'Enviando...';
 
